@@ -8,9 +8,11 @@ import org.springframework.stereotype.Service;
 import com.project.woodget.deliver.model.Deliver;
 import com.project.woodget.deliver.repository.DeliverRepository;
 
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
-@RequiredArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
 @Service
 public class DeliverService {
 	

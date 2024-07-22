@@ -8,6 +8,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -32,7 +33,7 @@ public class Deliver {
 	@JoinColumn(name="user_addr_num", referencedColumnName="user_addr_num", nullable=false)
 	private Address address; 
 	
-	@ManyToOne
+	@OneToOne
 	@JoinColumn(name="user_num", referencedColumnName="user_num", nullable=false)
 	private User user;
 	
